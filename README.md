@@ -18,6 +18,8 @@ For the rest of the install follow the Arch Wiki, Chnchi takes care of most part
 
 Work through this guide to configure the system: https://wiki.archlinux.org/index.php/General_recommendations
 
+Auto login and startx handled by [automatic login](https://wiki.archlinux.org/index.php/Getty#Automatic_login_to_virtual_console) and [auto start X](https://wiki.archlinux.org/index.php/Xinit#Autostart_X_at_login)
+
 Post install hardware that needed attention:
 
 * Backlight Keys
@@ -50,4 +52,29 @@ Installed [Laptop Mode Tools](https://wiki.archlinux.org/index.php/Laptop_Mode_T
 
 Follow the guide [here](https://antergos.com/wiki/hardware/graphics/bumblebee-for-nvidia-optimus/) to install drivers for Optimus with Bumblebee. Locked up on boot following driver installation and trying to launch X with `startx`. Solution was [here](https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Lockup_issue_.28lspci_hangs.29)
 
-## Software
+## Components
+
+In no particular order.
+
+* Window manager - _i3_
+* App Launcher - _dmenu_
+* Web Browser - _Google Chrome_
+* File Manager - _PCManFM_
+* Network Manager - _connman_
+* Clock - _chrony_
+* Terminal - _xterm_
+* GTK Theme - _Arc_
+* Video Player - _mpv_
+* Image Viewer - _feh_
+
+## Configuration
+
+## To Do Still
+
+* move font size over from .xresources file to i3.config
+* bash script to source houdini environment and start it
+* update i3.config
+
+
+
+
