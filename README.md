@@ -75,6 +75,29 @@ In no particular order.
 * bash script to source houdini environment and start it
 * update i3.config
 
+## Bash script houdinistart.sh
+```
+#!/bin.bash
+pushd /usr/hfs####.#### (your version of houdini)
+source houdini_setup
+popd
 
+houdini
+```
 
+## For i3config
 
+```
+# No borders
+new_window normal 0 px
+
+# Disable mouse focus
+focus_follows_mouse no
+
+# Shortcut bindings
+
+bindsym $mod+c exec google-chrome-stable
+bindsym $mod+x exec pcmanfm
+bindsym $mod+p exec houdinistart.sh
+
+```
