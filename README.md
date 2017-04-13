@@ -46,17 +46,19 @@ Worked out of the box but had no tap to click functionality. Follow instructions
 
 ### Power saving
 
-Installed [Laptop Mode Tools](https://wiki.archlinux.org/index.php/Laptop_Mode_Tools). Didn't configure anything.
+Installed [TLP](https://wiki.archlinux.org/index.php/Laptop_Mode_Tools). Configured tlp.service to use connman.service instead of NetworkManager.
 
 ### Graphics Card
 
 Follow the guide [here](https://antergos.com/wiki/hardware/graphics/bumblebee-for-nvidia-optimus/) to install drivers for Optimus with Bumblebee. Locked up on boot following driver installation and trying to launch X with `startx`. Solution was [here](https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Lockup_issue_.28lspci_hangs.29)
 
+Had a conflict with TLP and bumblebee, had to edit `/etc/default/tlp` and blacklist the GPU, more info [here](https://www.reddit.com/r/archlinux/comments/5m78zz/bumblebee_nvidia_error_on_optimus_laptop/)
+
 ## Components
 
 In no particular order.
 
-* Window manager - _i3_
+* Window Manager - _i3_
 * App Launcher - _dmenu_
 * Web Browser - _Google Chrome_
 * File Manager - _PCManFM_
@@ -66,12 +68,14 @@ In no particular order.
 * GTK Theme - _Arc_
 * Video Player - _mpv_
 * Image Viewer - _feh_
+* Power Manager - _TLP_
 
 ## Configuration
 
 ## To Do Still
 
-* move font size over from .xresources file to i3.config
+* 
+* configure status
 * bash script to source houdini environment and start it
 * update i3.config
 
