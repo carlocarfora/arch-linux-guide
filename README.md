@@ -72,9 +72,4 @@ In no particular order.
 
 ## Configuration
 
-## To Do Still
-
-* backup 
-* configure i3status
-* install font awesome for icons
-
+i3 and i3status config files are uploaded. List of installed packages also uploaded.
