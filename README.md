@@ -69,6 +69,7 @@ In no particular order.
 * Video Player - _mpv_
 * Image Viewer - _feh_
 * Power Manager - _TLP_
+* Night mode - _redshift_
 
 ## Configuration
 
